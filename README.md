@@ -68,38 +68,21 @@ KOK은 단순한 구인·구직 플랫폼이 아니라,
 
 <br>
 
-## 🛠️ 개발 환경
+## 🛠️ 기술 스택 (Tech Stack)
 
--   HTML, CSS, JS
--   Java
--   JSP
--   Spring Boot
--   Spring Security
--   JWT
--   JUnit
--   PostgreSQL
--   Mybatis
--   Redis
--   AWS-EC2
--   AWS-IAM
--   AWS-S3
--   Thymeleaf
--   VS Code
--   Intelli J
--   SourceTree
--   Postman
--   Kakao-Login
--   Google-Login
--   Naver-Login
--   OAuth 2.0
--   CoolSMS
--   JavaMail
--   Swagger
--   Git(Git-hub)
--   Git-Bash
--   YML
--   Gradle
--   Slack
+| 구분 | 사용 기술 |
+|------|------------|
+| **HTML Engine** | Thymeleaf |
+| **Frontend** | HTML, JavaScript, CSS |
+| **Backend** | Spring Boot, Java |
+| **Database** | PostgreSQL, Redis |
+| **Infra** | AWS EC2, AWS IAM, AWS S3 |
+| **Development Tools** | VS Code, IntelliJ IDEA |
+| **API & Library** | Kakao Login, Kakao Map, Kakao 주소 API, SMTP Gmail API, REST API, Lombok, MyBatis, OAuth 2.0, Google Login, Boot Pay, Naver Login, JWT, Spring Security, CoolSMS, Swagger UI |
+| **Collaboration & Version Control** | Git, GitHub, Slack, Postman, Sourcetree |
+| **Testing** | JUnit5 |
+
+<br>
 
 ## 📌 담당 업무
 
