@@ -183,14 +183,7 @@ public class ExperienceNoticeServiceImpl implements ExperienceNoticeService {
     @Override
     public String getBanner() {
         return bannerFileDAO.getBannerFileDTO()
-                .map(banner -> {
-                    String url = s3Service.getPreSignedUrl(banner.getBannerFilePath(), Duration.ofMinutes(10));
-                    System.out.println("🎯 !!!!!Banner S3 URL: " + url);
-                    return url;
-                })
-                .orElseGet(() -> {
-                    System.out.println("!!!!!⚠️ BannerFileDTO not found, using default banner");
-                    return "/images/experience/banner1.jpg";
-                });
+                .map(banner -> s3Service.getPreSignedUrl(banner.getBannerFilePath(), Duration.ofMinutes(10)))
+                .orElse("/images/experience/banner1.jpg");
     }
 }
