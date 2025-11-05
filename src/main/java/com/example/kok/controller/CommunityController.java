@@ -44,16 +44,17 @@ public class CommunityController {
         Long memberId = null;
 
         if (customUserDetails != null) {
+            model.addAttribute("userDTO", customUserDetails);
+
             memberId = customUserDetails.getId();
 
             if (customUserDetails.getUserRole() == UserRole.COMPANY) {
-                CompanyDTO companyDTO = companyService.findCompanyById(customUserDetails.getId());
+                CompanyDTO companyDTO = companyService.findCompanyById(memberId);
                 model.addAttribute("companyDTO", companyDTO);
             }
 
-            UserMemberDTO userMemberDTO = memberService.findMembersByMemberId(memberId);
-
-            if (userMemberDTO != null && customUserDetails.getUserRole() == UserRole.MEMBER) {
+            if (customUserDetails.getUserRole() == UserRole.MEMBER) {
+                UserMemberDTO userMemberDTO = memberService.findMembersByMemberId(memberId);
                 model.addAttribute("member", userMemberDTO);
             }
         }
