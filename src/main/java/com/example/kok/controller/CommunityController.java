@@ -52,7 +52,8 @@ public class CommunityController {
             }
 
             UserMemberDTO userMemberDTO = memberService.findMembersByMemberId(memberId);
-            if (userMemberDTO != null) {
+
+            if (userMemberDTO != null && customUserDetails.getUserRole() == UserRole.MEMBER) {
                 model.addAttribute("member", userMemberDTO);
             }
         }
