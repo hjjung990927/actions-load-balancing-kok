@@ -47,6 +47,8 @@
    ~$ sudo systemctl reload nginx~$ sudo systemctl status nginx
    ```
 
+#### CI/CD → Load Balancing 연동 흐름
+<img width="1920" height="1080" alt="Load-Balancing" src="https://github.com/user-attachments/assets/de134f76-03f3-47a4-aaeb-e4994bf87710" />
 
 
 
