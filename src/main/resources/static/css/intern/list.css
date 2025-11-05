@@ -10,10 +10,6 @@
     padding: 12px;
 }
 
-.int-wrapper{
-    overflow-y: auto;
-}
-
 .no-results {
     justify-content: center;
     display: flex;
@@ -458,10 +454,6 @@
     overflow-y: auto;
 }
 
-.sort-options + .list-container {
-    height: calc(100% - 56px);
-}
-
 .list-item {
     padding: 20px;
     border-top: 1px solid rgba(24,37,61,0.0600);
@@ -858,11 +850,6 @@ button.list-item-header .list-item-title {
     gap: 12px;
     margin-top: 12px;
     padding: 0 8px;
-    height: calc(var(--mobile-window) * 100);
-}
-
-:root {
-    --mobile-window: 1vh;
 }
 
 .detail-header {
@@ -2130,6 +2117,7 @@ input:-internal-autofill-selected {
 
     .sort-options + .list-container {
         height: calc(100% - 240px);
+        overflow-y: auto;
     }
 
     /* 토스트 팝업 */
