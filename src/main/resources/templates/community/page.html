@@ -86,13 +86,13 @@
                             <div class="etc-1" th:if="${userDTO.userRole.getValue() == 'company' }">
                                 <div class="etc-2">
                                     <div class="etc-3">
-                                        <img alt="" width="60" height="60" th:src="${companyDTO.companyProfileFile != null ? companyDTO.companyProfileFile : '/images/member/profile.png'}" style="color: transparent; border-radius: 999px; max-height: 60px; max-width: 60px; min-height: 60px; min-width: 60px; object-fit: contain;">
+                                        <img alt="" width="60" height="60" th:src="${userDTO.memberProfileUrl != null ? userDTO.memberProfileUrl : '/images/member/profile.png'}" style="color: transparent; border-radius: 999px; max-height: 60px; max-width: 60px; min-height: 60px; min-width: 60px; object-fit: contain;">
                                     </div>
                                     <div class="etc-4">
                                         <div class="etc-5">
                                             <p class="etc-6" th:text="${userDTO.username}"></p>
                                         </div>
-                                        <p class="etc-7" th:text="${companyDTO.companyName}"></p>
+                                        <p class="etc-7" th:text="${userDTO.companyName}"></p>
                                     </div>
                                 </div>
                             </div>
