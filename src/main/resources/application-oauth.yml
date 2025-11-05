@@ -9,7 +9,6 @@ spring:
 #            redirect-uri: http://localhost:10000/login/oauth2/code/google
 #            authorization-grant-type: authorization_code
 #            scope: profile, email
-
           kakao:
             client-id: ${KAKAO_CLIENT_ID}
             client-secret: ${KAKAO_CLIENT_SECRET}
