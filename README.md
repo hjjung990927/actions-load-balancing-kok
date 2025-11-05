@@ -78,7 +78,7 @@ KOK은 단순한 구인·구직 플랫폼이 아니라,
 | **Database** | PostgreSQL, Redis |
 | **Infra** | AWS EC2, AWS IAM, AWS S3 |
 | **Development Tools** | VS Code, IntelliJ IDEA |
-| **API & Library** | Kakao Login, Kakao Map, Kakao 주소 API, SMTP Gmail API, REST API, Lombok, MyBatis, OAuth 2.0, Google Login, Boot Pay, Naver Login, JWT, Spring Security, CoolSMS, Swagger UI |
+| **API & Library** | Kakao Login, SMTP Gmail API, REST API, Lombok, MyBatis, OAuth 2.0, Google Login, Boot Pay, Naver Login, JWT, Spring Security, CoolSMS, Swagger UI |
 | **Collaboration & Version Control** | Git, GitHub, Slack, Postman, Sourcetree |
 | **Testing** | JUnit5 |
 
