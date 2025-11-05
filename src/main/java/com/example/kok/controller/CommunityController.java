@@ -2,7 +2,10 @@ package com.example.kok.controller;
 
 import com.example.kok.aop.aspect.annotation.LogReturnStatus;
 import com.example.kok.auth.CustomUserDetails;
-import com.example.kok.dto.*;
+import com.example.kok.dto.AdvertisementDTO;
+import com.example.kok.dto.CompanyDTO;
+import com.example.kok.dto.ExperienceNoticeDTO;
+import com.example.kok.dto.UserMemberDTO;
 import com.example.kok.enumeration.UserRole;
 import com.example.kok.service.*;
 import lombok.RequiredArgsConstructor;
@@ -27,7 +30,6 @@ public class CommunityController {
     private final MemberService memberService;
     private final AdvertisementService advertisementService;
     private final CompanyService companyService;
-    private final UserService userService;
 
     @GetMapping("/page")
     @LogReturnStatus
@@ -42,12 +44,9 @@ public class CommunityController {
         Long memberId = null;
 
         if (customUserDetails != null) {
-            memberId = customUserDetails.getId();
+            model.addAttribute("userDTO", customUserDetails);
 
-            UserDTO userDTO = userService.findById(memberId);
-            if (userDTO != null) {
-                model.addAttribute("userDTO", userDTO);
-            }
+            memberId = customUserDetails.getId();
 
             if (customUserDetails.getUserRole() == UserRole.COMPANY) {
                 CompanyDTO companyDTO = companyService.findCompanyById(memberId);
