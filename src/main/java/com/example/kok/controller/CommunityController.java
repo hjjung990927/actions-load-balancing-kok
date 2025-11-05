@@ -45,7 +45,8 @@ public class CommunityController {
             memberId = customUserDetails.getId();
 
             if (customUserDetails.getUserRole() == UserRole.COMPANY) {
-                model.addAttribute("userDTO", customUserDetails);
+                CompanyDTO companyDTO = companyService.findCompanyById(customUserDetails.getId());
+                model.addAttribute("companyDTO", companyDTO);
             }
 
             if (customUserDetails.getUserRole() == UserRole.MEMBER) {
