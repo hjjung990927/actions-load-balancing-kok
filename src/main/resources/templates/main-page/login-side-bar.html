@@ -191,9 +191,9 @@
                             <th:replace th:if="${userDTO.userRole.getValue() == 'company' }">
                                 <a onclick="window.location.href='/enterprise-console'">
                                     <div class="sidebar-login-user-btn">
-                                        <img alt="image" width="32" height="32" style="background-color: #ccc;color:transparent;border-radius:999px;cursor:default;max-height:32px;max-width:32px;min-height:32px;min-width:32px;object-fit:contain" srcset="" th:src="${userDTO.memberProfileUrl}">
+                                        <img alt="image" width="32" height="32" style="background-color: #ccc;color:transparent;border-radius:999px;cursor:default;max-height:32px;max-width:32px;min-height:32px;min-width:32px;object-fit:contain" srcset="" th:src="${userDTO.memberProfileUrl || companyDTO.companyProfileFile}">
                                         <div class="sidebar-login-user-wrap">
-                                            <span class="sidebar-login-user-name" th:text="${userDTO.companyName}+' 님'"></span>
+                                            <span class="sidebar-login-user-name" th:text="${userDTO.companyName || companyDTO.companyName}+' 님'"></span>
                                         </div>
                                         <div class="sidebar-login-user-icon-wrap">
                                             <div class="sidebar-login-user-icon">

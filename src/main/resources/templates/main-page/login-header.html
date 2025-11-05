@@ -15,7 +15,7 @@
             <div class="header-space"></div>
             <div class="header-login-box">
                 <button type="button" class="header-login avatar">
-                            <img class="account-info-popover" style="padding: 0px;color:transparent;border-radius:999px;cursor:default;max-height:36px;max-width:36px;min-height:36px;min-width:36px;object-fit:contain" th:src="${userDTO.memberProfileUrl}">
+                            <img class="account-info-popover" style="padding: 0px;color:transparent;border-radius:999px;cursor:default;max-height:36px;max-width:36px;min-height:36px;min-width:36px;object-fit:contain" th:src="${userDTO.memberProfileUrl || companyDTO.companyProfileFile}">
                 </button>
                 <input id="id" type="text" style="display: none" th:value="${userDTO.id}">
                 <!-- 프로필 드롭다운 -->
@@ -28,7 +28,7 @@
                         </th:block>
                         <th:block>
                             <th:replace th:if="${userDTO.userRole.getValue()=='company'}">
-                                <div class="member-name" th:text="${userDTO.companyName}+' 님'"></div>
+                                <div class="member-name" th:text="${userDTO.companyName || companyDTO.companyName}+' 님'"></div>
                             </th:replace>
                         </th:block>
 

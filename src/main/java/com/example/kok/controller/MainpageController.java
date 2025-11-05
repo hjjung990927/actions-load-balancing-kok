@@ -2,7 +2,9 @@ package com.example.kok.controller;
 
 
 import com.example.kok.auth.CustomUserDetails;
+import com.example.kok.dto.CompanyDTO;
 import com.example.kok.dto.FileDTO;
+import com.example.kok.service.CompanyService;
 import com.example.kok.service.MainpageService;
 import com.example.kok.service.UserProfileService;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MainpageController {
     private final UserProfileService userProfileService;
     private final MainpageService mainpageService;
+    private final CompanyService companyService;
 
     @GetMapping("/main-ex")
     public String  goToEx(@AuthenticationPrincipal CustomUserDetails customUserDetails, Model model){
@@ -32,18 +35,25 @@ public class MainpageController {
 
         return "main-page/header";
     }
+
     @GetMapping("/login-header")
     public String goToLoginHeader(@AuthenticationPrincipal CustomUserDetails customUserDetails, Model model){
+        CompanyDTO companyDTO = companyService.findCompanyById(customUserDetails.getId());
+        model.addAttribute("companyDTO", companyDTO);
         mainpageService.findProfile(customUserDetails);
         model.addAttribute("userDTO", customUserDetails);
         return "main-page/login-header";
     }
+
     @GetMapping("/side-bar")
     public String goToSideBar(){
         return "main-page/side-bar";
     }
+
     @GetMapping("/login-side-bar")
     public  String goToLoginSideBar(@AuthenticationPrincipal CustomUserDetails customUserDetails, Model model){
+        CompanyDTO companyDTO = companyService.findCompanyById(customUserDetails.getId());
+        model.addAttribute("companyDTO", companyDTO);
         mainpageService.findProfile(customUserDetails);
         model.addAttribute("userDTO", customUserDetails);
         return "main-page/login-side-bar";
