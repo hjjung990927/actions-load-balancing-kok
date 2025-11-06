@@ -175,10 +175,8 @@ document.body.addEventListener("click", async (e) => {
                 <div class="reply-15">
                     <div class="reply-16">
                         <div class="reply-17">
-                            <textarea maxlength="2000" placeholder="댓글을 남겨보세요." rows="1" class="reply-18 replytext"></textarea>
-                            <svg class="enter" aria-label="icon" color="foregrounds.neutral.secondary" fill="currentColor" height="24" role="img" width="24">
-                                <path clip-rule="evenodd" d="M9.434 6.435a.8.8 0 0 1 1.132 0l5 5a.8.8 0 0 1 0 1.13l-5 5a.8.8 0 1 1-1.132-1.13L13.87 12 9.434 7.566a.8.8 0 0 1 0-1.131" fill-rule="evenodd"></path>
-                            </svg>
+                            <textarea maxlength="2000" rows="1" class="reply-18 reply-edit-text">${originalContent}</textarea>
+                            <p class="comment-update-submit" data-comment-id="${commentId}" style="cursor:pointer; color:#0066ff; font-weight:500;">수정</p>
                         </div>
                     </div>
                 </div>
