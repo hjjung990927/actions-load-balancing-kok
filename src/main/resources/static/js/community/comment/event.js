@@ -11,6 +11,7 @@ const showComments = async (postId) => {
     }
 };
 
+
 document.body.addEventListener("click", async (e) => {
     const target = e.target;
     const modal = document.getElementById("post-detail-modal");
