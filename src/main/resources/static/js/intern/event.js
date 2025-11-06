@@ -456,7 +456,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const shareBtn = e.target;
             const textBox = saveToast.querySelector("p");
             // 공유하기
-            let url = `http://13.209.155.6/intern/list?sharedCompanyId=${shareBtn.dataset.companyid}&sharedInternId=${shareBtn.dataset.internid}`;
+            let url = `http://kok-in.shop/intern/list?sharedCompanyId=${shareBtn.dataset.companyid}&sharedInternId=${shareBtn.dataset.internid}`;
             const textarea = document.createElement("textarea");
             document.body.appendChild(textarea);
             textarea.value = url;
@@ -1102,7 +1102,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         phone.value=user.userPhone;
 
-        submitBtn.addEventListener("click", async () => {
+        submitBtn.replaceWith(submitBtn.cloneNode(true));
+        const newSubmitBtn = popup.querySelector(".popup-action .btn-primary");
+
+        newSubmitBtn.addEventListener("click", async () => {
 
             // 이름을 입력안했을때
             if (!name.value.trim()) {
