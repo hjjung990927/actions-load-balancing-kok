@@ -12,7 +12,7 @@ const socialLoginContainer = document.querySelector('.social-login-container');
 const joinMember = document.querySelector('.join-member');
 const joinCompany = document.querySelector('.join-company');
 const checkRole = document.getElementById("role");
-const closeOutline = document.getElementById("close-outline");4
+const closeOutline = document.getElementById("close-outline");
 
 closeOutline.addEventListener("click",(e)=>{
     location.href='/experience/list';
