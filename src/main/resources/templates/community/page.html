@@ -349,10 +349,19 @@
                     </div>
 
 
-
-                    <div class="hide-1" th:if="${userDTO.userRole.getValue() == 'member' }">
-                        <button type="button" class="btn-write btn-primary popup-trigger" data-target="#post-write-popup" style="width: 70px; height: 40px; margin-bottom: 50px;">글쓰기</button>
-                    </div>
+                    <th:block th:if="${userDTO != null}">
+                        <div class="hide-1" th:if="${userDTO.userRole.getValue() == 'member' }">
+                            <button type="button" class="btn-write btn-primary popup-trigger" data-target="#post-write-popup" style="width: 70px; height: 40px; margin-bottom: 50px;">글쓰기</button>
+                        </div>
+                    </th:block>
+                    <th:block th:if="${userDTO != null}">
+                        <div class="hide-1" th:if="${userDTO.userRole.getValue() == 'company' }">
+                        </div>
+                    </th:block>
+                    <th:block th:if="${userDTO == null}">
+                        <div class="hide-1" th:if="${userDTO.userRole.getValue() == 'company' }">
+                        </div>
+                    </th:block>
                     <div class="change">
                         <div class="del-1">
                             <div class="del-2">
