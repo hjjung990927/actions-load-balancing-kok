@@ -170,7 +170,7 @@
                                                target="_blank"
                                                th:text="${company.companyUrl}"></a>
 
-                                            <span th:unless="${company.companyUrl == null}">등록된 홈페이지가 없습니다.</span>
+                                            <span th:if="${company.companyUrl == null}">등록된 홈페이지가 없습니다.</span>
                                         </p>
                                     </div>
                                 </li>
