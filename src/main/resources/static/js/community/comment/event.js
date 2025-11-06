@@ -216,22 +216,36 @@ document.body.addEventListener("click", async (e) => {
         const originalContent = (contentEl.textContent || "").trim();
 
         replyCard.querySelector(".detail-post-16").innerHTML = `
-            <div class="reply-14">
-                <div class="reply-15">
-                    <div class="reply-16">
-                        <div class="reply-17">
-                            <textarea maxlength="2000" rows="1" class="reply-18 reply-edit-text">${originalContent}</textarea>
-                            <p class="reply-update-submit" data-reply-id="${replyId}" style="cursor:pointer; color:#0066ff; font-weight:500;">수정</p>
-                        </div>
+        <div class="reply-14">
+            <div class="reply-15">
+                <div class="reply-16">
+                    <div class="reply-17">
+                        <textarea maxlength="2000" rows="1" class="reply-18 reply-edit-text">${originalContent}</textarea>
+                        <p class="reply-update-submit" data-reply-id="${replyId}" style="cursor:pointer; color:#0066ff; font-weight:500;">수정</p>
                     </div>
                 </div>
             </div>
-        `;
+        </div>
+        <div class="reply-mobile">
+            <div class="reply-15">
+                <div class="reply-16">
+                    <div class="reply-17">
+                        <textarea maxlength="2000" rows="1" class="reply-18 reply-edit-text">${originalContent}</textarea>
+                        <svg class="reply-update-submit-mobile" data-reply-id="${replyId}" fill="currentColor" height="24" width="24" style="cursor:pointer; color:#0066ff;">
+                            <path clip-rule="evenodd"
+                                  d="M9.434 6.435a.8.8 0 0 1 1.132 0l5 5a.8.8 0 0 1 0 1.13l-5 5a.8.8 0 1 1-1.132-1.13L13.87 12 9.434 7.566a.8.8 0 0 1 0-1.131"
+                                  fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
     }
 
     // 대댓글 수정 완료
-    if (target.closest(".reply-update-submit")) {
-        const btn = target.closest(".reply-update-submit");
+    if (target.closest(".reply-update-submit") || target.closest(".reply-update-submit-mobile")) {
+        const btn = target.closest(".reply-update-submit") || target.closest(".reply-update-submit-mobile");
         const container = btn.closest(".reply-17");
         const textarea = container.querySelector(".reply-edit-text");
         const replyId = btn.dataset.replyId;
