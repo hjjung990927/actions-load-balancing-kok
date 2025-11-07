@@ -69,6 +69,44 @@
 ### CI/CD → Load Balancing 연동 흐름
 <img width="1920" height="1080" alt="Load-Balancing" src="https://github.com/user-attachments/assets/de134f76-03f3-47a4-aaeb-e4994bf87710" />
 
+### 🧩 Trouble Shooting
+#### 🔍 문제 원인
+| Issue                  | Cause               |
+| ---------------------- | ------------------- |
+| 504 Gateway Time-out | Nginx가 프록시하는 포트와 Spring 실행 포트가 다름 |
+<br>
+<img width="377" height="116" alt="nginx" src="https://github.com/user-attachments/assets/416c4baf-13de-43cf-9c9f-b785c8dff619" />
+
+#### ✅ 해결 방안
+
+      // Nginx의 설정 파일을 수정하기 위해 여는 명령어
+      ~$ sudo vim /etc/nginx/sites-available/(프로젝트 명)
+
+            // 업스트림(백엔드 서버 그룹) 설정
+            upstream (프로젝트 명) {
+        	      least_conn; 	
+        	      server ipaddress1:80;  # 첫 번째 EC2 	
+        	      server ipaddress2:80;  # 두 번째 EC2
+	      }
+
+	      server {
+        	      listen 80;
+
+        	      location / {
+                	      proxy_pass http://(프로젝트 명);
+                	      proxy_set_header Host $host;
+                	      proxy_set_header X-Real-IP $remote_addr;
+    			      }
+	      }
+
+
+      // nginx 설정 테스트
+      ~$ sudo nginx -t
+
+      // nginx 설정 재시작
+      ~$ sudo systemctl reload nginx
+
+
 
 
 
