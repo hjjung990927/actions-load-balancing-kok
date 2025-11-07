@@ -106,6 +106,18 @@
       // nginx 설정 재시작
       ~$ sudo systemctl reload nginx
 
+#### 🔍 문제 원인
+| Issue                  | Cause               |
+| ---------------------- | ------------------- |
+| Docker 빌드 단계 실패 | ${{ secrets.EMAIL_PASSWORD }} 값에 공백 포함 |
+<br>
+<img width="923" height="224" alt="build" src="https://github.com/user-attachments/assets/cea3005f-4244-43ee-8861-e013cd0e9e57" />
+
+#### ✅ 해결 방안
+<img width="402" height="409" alt="build-fix" src="https://github.com/user-attachments/assets/10c9a4ae-0dbf-4fcf-acfb-9f45b47b0a12" />
+
+	GitHub Actions workflow에서 ${{ secrets.EMAIL_PASSWORD }}를 큰따옴표("")로 감싸 문자열로 인식하게 했다.
+
 
 
 
