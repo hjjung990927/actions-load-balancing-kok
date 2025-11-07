@@ -57,7 +57,7 @@ jobs:
               --build-arg KAKAO_CLIENT_SECRET=${{ secrets.KAKAO_CLIENT_SECRET }} \
               --build-arg NAVER_CLIENT_ID=${{ secrets.NAVER_CLIENT_ID }} \
               --build-arg NAVER_CLIENT_SECRET=${{ secrets.NAVER_CLIENT_SECRET }} \
-              --build-arg EMAIL_PASSWORD="${{ secrets.EMAIL_PASSWORD }}" \
+              --build-arg EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }} \
               --build-arg EMAIL_USERNAME=${{ secrets.EMAIL_USERNAME }} \
             -t kok .
             docker run -d -p 80:10000 --name kok \
@@ -71,7 +71,7 @@ jobs:
               -e NAVER_CLIENT_ID=${{ secrets.NAVER_CLIENT_ID }} \
               -e NAVER_CLIENT_SECRET=${{ secrets.NAVER_CLIENT_SECRET }} \
               -e JWT_SECRET=${{ secrets.JWT_SECRET }} \
-              -e EMAIL_PASSWORD="${{ secrets.EMAIL_PASSWORD }}" \
+              -e EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }} \
               -e EMAIL_USERNAME=${{ secrets.EMAIL_USERNAME }} \
               kok
 
