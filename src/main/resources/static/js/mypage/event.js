@@ -331,7 +331,7 @@ const showProfileUpdate=async ()=>{
     // 프로필 삭제
     profileDelete.addEventListener("click", ()=>{
         profileImgPop.style.display="none";
-        profileImgRound.src='/images/main-page/image.png';
+        profileImgRound.src='/images/member/profile.png';
         profileDeleteReal=true;
     })
     // 직군 변경 모달
