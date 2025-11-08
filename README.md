@@ -69,6 +69,56 @@
 ### CI/CD → Load Balancing 연동 흐름
 <img width="1920" height="1080" alt="Load-Balancing" src="https://github.com/user-attachments/assets/de134f76-03f3-47a4-aaeb-e4994bf87710" />
 
+### 🧩 Trouble Shooting
+#### 🔍 문제 원인
+| Issue                  | Cause               |
+| ---------------------- | ------------------- |
+| 504 Gateway Time-out | Nginx가 프록시하는 포트와 Spring 실행 포트가 다름 |
+<br>
+<img width="377" height="116" alt="nginx" src="https://github.com/user-attachments/assets/416c4baf-13de-43cf-9c9f-b785c8dff619" />
+
+#### ✅ 해결 방안
+
+      // Nginx의 설정 파일을 수정하기 위해 여는 명령어
+      ~$ sudo vim /etc/nginx/sites-available/(프로젝트 명)
+
+            // 업스트림(백엔드 서버 그룹) 설정
+            upstream (프로젝트 명) {
+        	      least_conn; 	
+        	      server ipaddress1:80;  # 첫 번째 EC2 	
+        	      server ipaddress2:80;  # 두 번째 EC2
+	      }
+
+	      server {
+        	      listen 80;
+
+        	      location / {
+                	      proxy_pass http://(프로젝트 명);
+                	      proxy_set_header Host $host;
+                	      proxy_set_header X-Real-IP $remote_addr;
+    			      }
+	      }
+
+
+      // nginx 설정 테스트
+      ~$ sudo nginx -t
+
+      // nginx 설정 재시작
+      ~$ sudo systemctl reload nginx
+
+#### 🔍 문제 원인
+| Issue                  | Cause               |
+| ---------------------- | ------------------- |
+| Docker 빌드 단계 실패 | ${{ secrets.EMAIL_PASSWORD }} 값에 공백 포함 |
+<br>
+<img width="923" height="224" alt="build" src="https://github.com/user-attachments/assets/cea3005f-4244-43ee-8861-e013cd0e9e57" />
+
+#### ✅ 해결 방안
+<img width="402" height="409" alt="build-fix" src="https://github.com/user-attachments/assets/10c9a4ae-0dbf-4fcf-acfb-9f45b47b0a12" />
+
+	GitHub Actions workflow에서 ${{ secrets.EMAIL_PASSWORD }}를 큰따옴표("")로 감싸 문자열로 인식하게 했다.
+
+
 
 
 
