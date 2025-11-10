@@ -94,6 +94,7 @@
         left join tbl_company_scale_category csc on cscb.company_scale_category_id = csc.id
         where u.user_status = 'active'
         and u.user_role = 'company'
+        order by u.created_datetime desc
         <include refid="search"/>
         limit #{criteria.count} offset #{criteria.offset}
     </select>

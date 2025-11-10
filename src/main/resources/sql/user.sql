@@ -23,4 +23,5 @@ delete from tbl_user_job_category where user_id = 31;
 select * from tbl_user_job_category;
 insert into tbl_user_job_category(user_id, job_category)  values (28,1);
 select * from tbl_job_category;
-select * from tbl_user;
+select * from tbl_user where user_role = 'member';
+select * from tbl_follow;
