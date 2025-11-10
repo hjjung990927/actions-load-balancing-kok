@@ -20,4 +20,4 @@ create table tbl_user
     sns_email        varchar(255)
 );
 
-select * from tbl_user;
+
