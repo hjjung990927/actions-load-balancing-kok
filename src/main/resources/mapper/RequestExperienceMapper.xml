@@ -60,6 +60,7 @@
         on n.id = r.experience_notice_id
         where r.member_id = #{id}
         AND r.created_datetime >= NOW() - INTERVAL '3 MONTH'
+        AND r.request_experience_active = 'active'
         <if test="experienceId != null">
             and r.id = #{experienceId}
         </if>

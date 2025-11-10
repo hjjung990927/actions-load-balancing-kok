@@ -69,6 +69,7 @@
         JOIN tbl_company c ON ino.company_id = c.user_id
         WHERE ri.member_id = #{id}
         AND ri.created_datetime >= NOW() - INTERVAL '3 MONTH'
+        AND ri.request_intern_active = 'active'
         <if test="internId != null">
             AND ri.id = #{internId}
         </if>
