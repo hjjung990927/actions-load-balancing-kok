@@ -75,7 +75,7 @@
         </if>
     </select>
 
-    <!--    지원서 개수 조회-->
+    <!-- 지원서 개수 조회-->
     <select id="countRequest">
         select count(*)
         from tbl_request_intern
