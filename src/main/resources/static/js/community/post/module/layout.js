@@ -22,7 +22,7 @@ const postLayout = (() => {
                             </div>
                         </div>
                         <div class="post-14">
-                            <p class="post-15">${post.jobName || '-'}</p>
+                            <p class="post-15">${post.jobName || '미선택'}</p>
                             <p class="post-15">${post.relativeDate}</p>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ const postLayout = (() => {
                         </div>
                     </div>
                     <div class="post-14">
-                        <p class="post-15">${post.jobName || '-'}</p>
+                        <p class="post-15">${post.jobName || '미선택'}</p>
                         <p class="post-15">${post.relativeDate}</p>
                     </div>
                 </div>

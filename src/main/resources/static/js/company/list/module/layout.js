@@ -27,9 +27,9 @@ const companyLayout = (() => {
                             <img src="${company.companyProfileFile || '/images/member/profile.png'}" style="background-color: #ccc; border-radius: 999px;">
                         </div>
                         <div class="list-item-content">
-                            <p class="list-item-category">${company.companySectorName|| '-'}</p>
+                            <p class="list-item-category">${company.companySectorName|| ''}</p>
                             <p class="list-item-name">${company.companyName}</p>
-                            <p class="list-item-description">${company.companyInfo || '-'}</p>
+                            <p class="list-item-description">${company.companyInfo || ''}</p>
                         </div>
                     </div>
                 </button>

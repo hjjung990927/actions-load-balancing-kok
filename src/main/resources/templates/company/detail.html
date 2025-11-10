@@ -51,7 +51,7 @@
                                         <div class="profile-name">
                                             <p class="member-name" th:text="${company.companyName}"></p>
                                         </div>
-                                        <p class="profile-category" th:text="${company.companySectorName != null ? company.scaleName : '-'}"></p>
+                                        <p class="profile-category" th:text="${company.companySectorName != null ? company.scaleName : ''}"></p>
                                     </div>
                                 </div>
                                 <div class="stats-list">
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                                 <div class="company-intro">
-                                    <p th:text="${company.companyInfo != null ? company.companyInfo : '-'}"></p>
+                                    <p th:text="${company.companyInfo != null ? company.companyInfo : ''}"></p>
                                 </div>
                                 <div class="profile-btn-wrap">
                                     <button class="btn-primary btn-follow" type="button" th:data-company-id="${company.userId}">
@@ -85,11 +85,11 @@
                                 <ul class="company-info-list">
                                     <li class="company-info-item">
                                         <p class="label">산업 분야</p>
-                                        <p class="value" th:text="${company.companySectorName != null ? company.companySectorName : '-'}"></p>
+                                        <p class="value" th:text="${company.companySectorName != null ? company.companySectorName : ''}"></p>
                                     </li>
                                     <li class="company-info-item">
                                         <p class="label">기업 규모</p>
-                                        <p class="value" th:text="${company.scaleName != null ? company.scaleName : '-'}"></p>
+                                        <p class="value" th:text="${company.scaleName != null ? company.scaleName : ''}"></p>
                                     </li>
                                 </ul>
                             </div>

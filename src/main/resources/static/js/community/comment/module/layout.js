@@ -21,7 +21,7 @@ const commentLayout = (() => {
                             </div>
                         </div>
                         <div class="post-14">
-                            <p class="post-15" style="font-size:14px;">${comment.jobName || '-'}</p>
+                            <p class="post-15" style="font-size:14px;">${comment.jobName || '미선택'}</p>
                             <p class="post-15" style="font-size:14px;">${comment.relativeDate}</p>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ const commentLayout = (() => {
                                         </div>
                                     </div>
                                     <div class="post-14">
-                                        <p class="post-15" style="font-size:14px;">${reply.jobName || '-'}</p>
+                                        <p class="post-15" style="font-size:14px;">${reply.jobName || '미선택'}</p>
                                         <p class="post-15" style="font-size:14px;">${reply.relativeDate}</p>
                                     </div>
                                 </div>
