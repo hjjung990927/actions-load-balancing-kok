@@ -1274,7 +1274,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 requestExperienceDTO.requestExperienceMemberUrl = url.value;
             }
 
-            await experienceService.pay(1000, requestExperienceDTO);
+            await experienceService.pay(2000, requestExperienceDTO);
 
             // const memberName=name.value;
             // const memberEmail=email.value;
