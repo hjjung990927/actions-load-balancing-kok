@@ -65,7 +65,7 @@
                                         <div class="etc-5">
                                             <p class="etc-6" th:text="${member.userName}"></p>
                                         </div>
-                                        <p class="etc-7" th:text="${member.jobName != null ? member.jobName : '-'}"></p>
+                                        <p class="etc-7" th:text="${member.jobName != null ? member.jobName : '미선택'}"></p>
                                     </div>
                                 </div>
                                 <div class="etc-8">
@@ -273,7 +273,7 @@
                                         <div class="profile-name">
                                             <p class="member-name" th:text="${member.userName}"></p>
                                         </div>
-                                        <p class="profile-category" th:text="${member.jobName != null ? member.jobName : '-'}"></p>
+                                        <p class="profile-category" th:text="${member.jobName != null ? member.jobName : '미선택'}"></p>
                                     </div>
 
                                     <div class="popup-close-box">
@@ -350,7 +350,7 @@
 
 
 
-                    <div class="hide-1"z>
+                    <div class="hide-1">
                         <button type="button" class="btn-write btn-primary popup-trigger" data-target="#post-write-popup" style="width: 70px; height: 40px; margin-bottom: 50px;">글쓰기</button>
                     </div>
                     <div class="change">
