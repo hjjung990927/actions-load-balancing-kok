@@ -177,6 +177,176 @@ const myPageLayout = (() => {
                                                                                 </svg>
                                                                             </div>
                                                                         </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">HR/인사</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">회계/재무</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">법률/법무</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">상담/영업</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">교육/복지</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">HW 개발</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">연구/R&D</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">금융/투자</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">의료/바이오</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">건설/부동산</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">미디어/출판</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">제조/생산</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">운전/물류</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">식품/조리</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">숙박/레저</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">서비스</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="job-3">
+                                                                            <div class="job-5">
+                                                                                <p class="job-6">종교인</p>
+                                                                            </div>
+                                                                            <div class="choice">
+                                                                                <svg aria-label="icon" color="foregrounds.neutral.tertiary" fill="currentColor" height="24" role="img" width="24">
+                                                                                    <path clip-rule="evenodd" d="M20.066 5.935a.8.8 0 0 1 0 1.13l-11 11a.8.8 0 0 1-1.131 0l-4-4a.8.8 0 0 1 1.13-1.13L8.5 16.369 18.935 5.935a.8.8 0 0 1 1.13 0" fill-rule="evenodd"></path>
+                                                                                </svg>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
