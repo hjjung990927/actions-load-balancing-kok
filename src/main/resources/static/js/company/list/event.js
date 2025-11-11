@@ -10,7 +10,7 @@ const showList = async (page = 1) => {
 
     companiesCriteria = await companyService.getList(page, companyLayout.showList, SearchCompanies);
 
-    if (loading) setTimeout(() => loading.style.display = "none", 500);
+    // if (loading) setTimeout(() => loading.style.display = "none", 500);
     return companiesCriteria;
 };
 showList(page);
