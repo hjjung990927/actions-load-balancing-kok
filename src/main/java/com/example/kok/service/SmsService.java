@@ -5,6 +5,7 @@ import com.solapi.sdk.message.exception.SolapiMessageNotReceivedException;
 import com.solapi.sdk.message.model.Message;
 import com.solapi.sdk.message.service.DefaultMessageService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,10 @@ import java.util.Random;
 @RequiredArgsConstructor
 @Slf4j
 public class SmsService {
+    @Value("${sms.api.access}")
+    private String apiKey;
+    @Value("${sms.api.secret}")
+    private String apiSecret;
     //    코드 생성
     private String createCode(){
         String codes = "0123456789";
@@ -31,8 +36,7 @@ public class SmsService {
     //    문자 발송
     public String send(String phone) {
         String code = createCode();
-
-     DefaultMessageService messageService =  SolapiClient.INSTANCE.createInstance("NCSYINPFEQ3EZM5G", "YP9MKYSX67TLIUDUBWJ3VAIPNY5S2RVC");
+        DefaultMessageService messageService =  SolapiClient.INSTANCE.createInstance(apiKey, apiSecret);
     // Message 패키지가 중복될 경우 com.solapi.sdk.message.model.Message로 치환하여 주세요
     Message message = new Message();
     message.setFrom("01051133095");
