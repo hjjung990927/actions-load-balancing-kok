@@ -5,8 +5,12 @@ let companiesCriteria;
 let SearchCompanies  = {};
 
 const showList = async (page = 1) => {
+    const loading = document.getElementById("loading");
+    if (loading) loading.style.display = "block";
+
     companiesCriteria = await companyService.getList(page, companyLayout.showList, SearchCompanies);
 
+    if (loading) setTimeout(() => loading.style.display = "none", 500);
     return companiesCriteria;
 };
 showList(page);
