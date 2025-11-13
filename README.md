@@ -9,6 +9,7 @@
 |`관리자 계정`| admin@test.com | 1234 | http://hikok.store/admin/login |
 ```
 재접속 중 오류 시 관리자모드(F12) Application 내에 URL의 Cookies를 지워주시면 감사하겠습니다.
+또한, SNS 로그인은 계정 보호를 위해 삼가해주시고 테스트용 계정으로 확인해주시면 감사하겠습니다.
 ```
 ## Load-Balancing 😺
 <a name="readme-top"></a> 
