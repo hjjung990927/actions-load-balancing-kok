@@ -7,8 +7,6 @@ create table tbl_member_alarm_setting (
           references tbl_member(user_id)
 );
 
-select * from tbl_member_alarm_setting;
-
 -- 순서대로 하면 됩니다
 alter table tbl_member_alarm_setting RENAME company_post_alarm TO member_post_like_alarm;
 alter table tbl_member_alarm_setting drop member_post_like_alarm;

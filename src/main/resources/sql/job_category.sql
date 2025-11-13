@@ -32,5 +32,3 @@ insert into tbl_job_category (job_name) values
                                             ('종교인'),
                                             ('미선택');
 
-
-select * from tbl_job_category;

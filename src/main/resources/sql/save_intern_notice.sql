@@ -11,5 +11,3 @@ create table tbl_save_intern_notice
     created_datetime timestamp default now(),
     updated_datetime timestamp default now()
 );
-
-drop table tbl_save_intern_notice;

@@ -9,6 +9,3 @@ create table tbl_report
         constraint fk_report_member
             references tbl_member
 );
-
-select * from tbl_report;
-select * from tbl_post where id = 6;

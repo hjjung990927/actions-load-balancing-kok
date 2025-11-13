@@ -8,5 +8,3 @@ create table tbl_company
     company_info varchar(255),
     company_url  varchar(255)
 );
-
-select * from tbl_company;

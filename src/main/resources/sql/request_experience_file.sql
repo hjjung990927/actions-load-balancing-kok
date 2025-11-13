@@ -8,5 +8,3 @@ create table tbl_request_experience_file
         constraint fk_request_experience_file_request_experience
             references tbl_request_experience
 );
-
-drop table tbl_request_experience_file;

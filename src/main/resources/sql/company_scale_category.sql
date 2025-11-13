@@ -13,9 +13,5 @@ values
     ('작은 규모'),
     ('중간 규모'),
     ('큰 규모'),
-    ('매우 큰 규모');
-
-insert into tbl_company_scale_category(company_scale_name)
-values('미선택');
-
-select * from tbl_company_scale_category;
+    ('매우 큰 규모'),
+    ('미선택');
