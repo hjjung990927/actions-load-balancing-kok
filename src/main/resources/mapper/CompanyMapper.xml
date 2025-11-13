@@ -188,5 +188,4 @@
         from vw_user_company_job_follow_scale
         where user_status = 'active' and user_id = #{userId}
     </select>
-
 </mapper>
