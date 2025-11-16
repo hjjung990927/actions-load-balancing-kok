@@ -1,0 +1,19 @@
+# Git 폴더 제외
+.git
+
+# Gradle 빌드 캐시
+.gradle
+build/
+
+# IDE 관련 파일
+.idea
+*.iml
+.vscode/
+*.iws
+*.ipr
+out/
+.settings
+
+# 로그, 임시 파일
+*.log
+*.tmp
