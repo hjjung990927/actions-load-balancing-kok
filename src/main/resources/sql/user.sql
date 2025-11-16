@@ -19,4 +19,3 @@ create table tbl_user
     updated_datetime timestamp default now(),
     sns_email        varchar(255)
 );
-
