@@ -188,9 +188,24 @@ document.body.addEventListener("click", async (e) => {
         const hasFiles = fileBuffer.length > 0;
         const files = writeFiles.files;
 
+        // 게시글 작성 시 욕설 확인
+        const response = await fetch(`https://civil-kidney-code-belongs.trycloudflare.com/api/community/word-check`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ message: content })
+        });
+
+        const result = await response.json();
+
         if (!isEdit) {
             if (content.length < 10 && !hasFiles) {
                 alert("10자 이상 작성하거나 파일을 추가해주세요.");
+                return;
+            }
+            if (result.isBadWord) {
+                alert("욕설이 포함되어 있습니다. 게시글을 수정해주세요.");
                 return;
             }
             try {
