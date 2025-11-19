@@ -146,6 +146,50 @@ FastAPI 서버에서 Naive Bayes(나이브 베이즈) 모델을 사용해 게시
 
 #### 📚 사용 데이터셋
 
+| 데이터셋명 | 설명 | 출처 |
+|-----------|------|------|
+| **한국어 악성댓글 데이터셋** | 욕설감지데이터셋 에서 욕설문장만 데이터셋으로 활용 | 🔗 https://github.com/ZIZUN/korean-malicious-comments-dataset |
+
+## 🔧 모델 설명
+
+### ✔️ 알고리즘  
+- **Multinomial Naive Bayes**  
+  - 텍스트 분류에 특화  
+  - 단어 등장 빈도 기반으로 욕설 여부 예측  
+
+### ✔️ 전처리 & 학습 과정
+1. 특수문자 제거 / 형태소 단위 정규화(kiwipiepy 사용)
+2. `CountVectorizer` 로 BoW(단어 출현 빈도) 벡터 변환
+3. MultinomialNB 학습
+4. `word_model.pkl` 로 모델 저장 후 FastAPI에 로드
+
+#### 🔗 [모델 훈련 코드](https://github.com/hjjung990927/study-Machine-Learning/blob/master/machine-learning/task/word_task.ipynb)
+#### ⚠️ 불편함을 느낄 수 있는 문장과 단어가 있습니다.
+
+### ⚙️ FastAPI 욕설 여부 분석 엔드포인트
+```python
+@app.post("/api/community/word-check", response_model=WordCheckResponse)
+async def check_word(request: WordCheckRequest):
+    model = joblib.load(f"word_model.pkl")
+    prediction = model.predict([request.message])
+    return {"isBadWord": bool(prediction)}
+```
+<img width="314" height="77" alt="machine-learning" src="https://github.com/user-attachments/assets/b9a35420-e882-4cca-a322-5471cc9c5ee9" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
