@@ -129,7 +129,8 @@
 <img width="402" height="409" alt="build-fix" src="https://github.com/user-attachments/assets/10c9a4ae-0dbf-4fcf-acfb-9f45b47b0a12" />
 
 	GitHub Actions workflow에서 ${{ secrets.EMAIL_PASSWORD }}를 큰따옴표("")로 감싸 문자열로 인식하게 했다.
-
+	
+# **Data-Analysis & Machine-Learning** 
 ## 🗣️ AI 욕설 확인 기능
 
 #### 📋 기능 개요
