@@ -456,7 +456,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const shareBtn = e.target;
             const textBox = saveToast.querySelector("p");
             // 공유하기
-            let url = `http://kok-in.shop/intern/list?sharedCompanyId=${shareBtn.dataset.companyid}&sharedInternId=${shareBtn.dataset.internid}`;
+            let url = `http://hikok.store/intern/list?sharedCompanyId=${shareBtn.dataset.companyid}&sharedInternId=${shareBtn.dataset.internid}`;
             const textarea = document.createElement("textarea");
             document.body.appendChild(textarea);
             textarea.value = url;
@@ -1631,8 +1631,8 @@ const sectorComplBtn = document.getElementById("sector-compl-btn");
 const scaleComplBtn = document.getElementById("scale-compl-btn");
 
 // 이벤트 등록
-sectorComplBtn.addEventListener("click", applyFilters);
-scaleComplBtn.addEventListener("click", applyFilters);
+sectorComplBtn.addEventListener("click", internApplyFilters);
+scaleComplBtn.addEventListener("click", internApplyFilters);
 document.getElementById("search-form")?.addEventListener("submit", e => {
     e.preventDefault();
     showList();
