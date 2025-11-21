@@ -477,6 +477,11 @@ p.general-p {
 	justify-content: center;
 }
 
+.google-box-button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
 .naver-box {
 	flex: 1 1 0;
 	min-width: 76px;
