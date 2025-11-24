@@ -426,12 +426,15 @@ async def check_word(request: WordCheckRequest):
 <br>
 
 ### **📌 4. 각 포트를 확인 후 처리를 명확히 하자**
+
+#### **💥문제 상황**
+-   NGINX의 응답시간 초과
+<img width="377" height="116" alt="nginx" src="https://github.com/user-attachments/assets/416c4baf-13de-43cf-9c9f-b785c8dff619" />
+
 #### 🔍 문제 원인
 | Issue                  | Cause               |
 | ---------------------- | ------------------- |
 | 504 Gateway Time-out | Nginx가 프록시하는 포트와 Spring 실행 포트가 다름 |
-<br>
-<img width="377" height="116" alt="nginx" src="https://github.com/user-attachments/assets/416c4baf-13de-43cf-9c9f-b785c8dff619" />
 
 #### ✅ 해결 방안
 
@@ -463,12 +466,15 @@ async def check_word(request: WordCheckRequest):
       ~$ sudo systemctl reload nginx
 
 ### **📌 5. 공백 값에 유의하자**
+
+#### **💥문제 상황**
+-   Docker 빌드 실패
+<img width="923" height="224" alt="build" src="https://github.com/user-attachments/assets/cea3005f-4244-43ee-8861-e013cd0e9e57" />
+
 #### 🔍 문제 원인
 | Issue                  | Cause               |
 | ---------------------- | ------------------- |
 | Docker 빌드 단계 실패 | ${{ secrets.EMAIL_PASSWORD }} 값에 공백 포함 |
-<br>
-<img width="923" height="224" alt="build" src="https://github.com/user-attachments/assets/cea3005f-4244-43ee-8861-e013cd0e9e57" />
 
 #### ✅ 해결 방안
 <img width="402" height="409" alt="build-fix" src="https://github.com/user-attachments/assets/10c9a4ae-0dbf-4fcf-acfb-9f45b47b0a12" />
