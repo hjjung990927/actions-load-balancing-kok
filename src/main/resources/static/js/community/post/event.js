@@ -189,7 +189,7 @@ document.body.addEventListener("click", async (e) => {
         const files = writeFiles.files;
 
         // 게시글 작성 시 욕설 확인
-        const response = await fetch(`https://dual-inputs-ruth-forwarding.trycloudflare.com/api/community/word-check`, {
+        const response = await fetch(`https://coordinates-alto-tray-ira.trycloudflare.com/api/community/word-check`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
