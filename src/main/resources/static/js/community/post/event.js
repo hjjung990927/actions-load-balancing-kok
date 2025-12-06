@@ -189,7 +189,7 @@ document.body.addEventListener("click", async (e) => {
         const files = writeFiles.files;
 
         // 게시글 작성 시 욕설 확인
-        const response = await fetch(`https://how-separately-dependent-always.trycloudflare.com/api/community/word-check`, {
+        const response = await fetch(`https://environment-travelling-consequences-scanner.trycloudflare.com/api/community/word-check`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
